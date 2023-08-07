@@ -1,1 +1,1 @@
-Shell basics
+A Script that prints "Hello, World"
