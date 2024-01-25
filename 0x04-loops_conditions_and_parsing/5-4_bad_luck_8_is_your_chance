@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# print bad luck on 4th line, good luck on 8th line and, Best School for others
+
+i=1
+
+while [ $i -le 10 ]
+do
+    if [ $i -eq 4 ]
+    then
+        echo "bad luck"
+    elif [ $i -eq 8 ]
+    then
+        echo "good luck"
+    else
+        echo "Best school"
+    fi
+    ((i++))
+done
