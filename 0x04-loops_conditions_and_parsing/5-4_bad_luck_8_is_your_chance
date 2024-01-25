@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# print bad luck on 4th line, good luck on 8th line and, Best School for others
+# Print bad luck at specifi index.
 
 i=1
 
@@ -12,7 +12,7 @@ do
     then
         echo "good luck"
     else
-        echo "Best school"
+        echo "Best School"
     fi
     ((i++))
 done
