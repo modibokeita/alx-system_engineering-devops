@@ -1,14 +1,12 @@
 #!/usr/bin/env bash
-# This print Best school 10 times while i less than 10
+# Say hi on the 9th loop
 i=1
-
 while [ $i -lt 11 ]
 do
-    echo "Best school"
+    echo "Best School"
     if [ $i -eq 9 ]
     then
         echo "Hi"
     fi
     ((i++))
 done
-	 
