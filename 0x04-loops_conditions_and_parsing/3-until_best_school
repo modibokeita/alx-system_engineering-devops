@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# This script print Best school 10 times using until loop
+# Print 'best school' until count less than 10
 count=0
 until [ $count -eq 10 ]
 do
-	echo "Best school"
-	((count++))
+    echo "Best School"
+    ((count++))
 done
