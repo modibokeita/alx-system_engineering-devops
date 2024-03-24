@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # using puppet
 
-file {'etc/ssh/ssh_config':
+file {'ect/ssh/ssh_cofig':
   ensure => present,
   content => "#ssh client configuration
 	      host*
