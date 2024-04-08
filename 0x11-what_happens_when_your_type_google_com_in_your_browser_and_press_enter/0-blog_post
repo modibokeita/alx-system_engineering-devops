@@ -1,0 +1,63 @@
+what happens when you type https://www.google.com in your browser and press Enter?
+
+Introduction:
+
+Have you ever wondered what happens when you type an URL into your browser and hit Enter?
+
+The process seems seamless, but under the hood, a complex series of events unfold to bring you the web page you requested.
+In this blog post, we'll take a deep dive into the journey of a simple browser request, from initial DSN lookup to the final
+rendering of the web page.
+
+1- DNS Request:
+the journey starts when you type https://www.google.com into your browser.
+The browser initiates a Domain Name System (DNS) lookup to translate the human-readable domain www.google.com name into an IP
+adress. This lookup involves querying a DNS server, which returns the corresponding IP adress of Google's servers.
+
+2- TCP/IP:
+Armed with the IP address, the browser establishes a transimission control Protocol (TCP) connection with the Google server using
+the Internet Protocol(IP). TCP ensures reliable, ordered delivery of data packets between the client (browser) and the server.
+
+3- Firewall:
+
+As the TCP connection is established, it may travers through various network devices, including firewalls.
+Firewall act as gatekeepers, enforcing security policies to filter and monitor incoming and outgoing network traffic.
+they ensure that only authorized connections are allowed while blocking potential threats.
+
+4 - HTTPS/SSL:
+In the case https://" URLs like "https://www.google.com, the connection is secured using the Hypertext Transfer Protocol Secure
+(HTTPS) which apply Secure Socket Layer (SSL) or its successor, Transport Layer Security(TLS). This encryption layer ensures that
+the data exchanged between the client and server remains confidential and cannot be intercepted by malicious entities.
+
+5- Load-Balancer:
+
+Upon receiving the request, Google's infrastructure may utilize load balancers to distribute incoming traffic across multiple
+servers. Load balancers improve scalability, reliability, and availability by evenly distributing the workload among servers
+based on factors like server health and current traffic load.
+
+6- Web Server:
+Once the request reaches a Google server, a web server such as Apache, Nginx, or Google's proprietary infrastructure
+processes the request. The web server retrieves the requested web page or resource and prepares it for delivery back
+to the client.
+
+7- Application Server:
+For dynamic web pages or applications requiring server-side processing, the web server may communicate with an application
+server. The application server executes the necessary code (e.g., PHP, Python, Java) to generate the content dynamically
+before sending it back to the web server for delivery.
+
+8- Database:
+In scenarios where the requested content relies on data stored in a database, the application server interacts with the
+database server to retrieve or manipulate the required data. This interaction involves querying the database using
+Structured Query Language (SQL) or other database-specific protocols.
+
+9- Conclusion:
+The journey of a browser request from typing a URL to rendering a web page involves numerous components working together
+seamlessly. Understanding this process provides valuable insights into how the web stack operates and enables us to
+appreciate the complexity behind seemingly simple interactions. As technology continues to evolve, so too will the
+mechanisms and components involved in serving web content, making it an endlessly fascinating field to explore.
+
+
+
+
+
+
+
